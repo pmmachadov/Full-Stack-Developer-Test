@@ -1,0 +1,62 @@
+.sessions-list-container {
+  margin-top: 30px;
+}
+
+.sessions-list-container h2 {
+  color: #1a73e8;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.session-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.session-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-color: #1a73e8;
+}
+
+.session-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.session-time {
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.session-capacity {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.capacity-number {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.no-sessions {
+  color: #777777;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}

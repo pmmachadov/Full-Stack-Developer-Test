@@ -1,0 +1,112 @@
+.session-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.session-detail-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.session-detail-container h2 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.session-info {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.info-group {
+  margin-bottom: 15px;
+}
+
+.info-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.info-group p {
+  margin: 0;
+  color: #333;
+}
+
+.enrollment-section h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.student-selection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.student-dropdown {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.student-dropdown:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.enroll-button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.enroll-button:hover {
+  background-color: #1557b0;
+}
+
+.enroll-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
