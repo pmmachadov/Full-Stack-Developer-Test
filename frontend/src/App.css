@@ -5,38 +5,38 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  background-color: #f8f9fa;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: #212529;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.card {
-  padding: 2em;
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.read-the-docs {
-  color: #888;
+.sessions-for-date {
+  margin-top: 30px;
+}
+
+.sessions-for-date h2 {
+  color: #212529;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
