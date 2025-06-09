@@ -11,7 +11,7 @@ const Calendar = ({ sessions, onDateSelect }) => {
 
       Object.keys(sessions).forEach((courseName) => {
         sessions[courseName].forEach((session) => {
-          const dateStr = session.fecha_inicio.split(" ")[0]; // Format: "DD/MM/YYYY"
+          const dateStr = session.fecha_inicio.split(" ")[0];
           dates.add(dateStr);
         });
       });
