@@ -8,13 +8,27 @@
 body {
   background-color: #f8f9fa;
   color: #333333;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212529;
+  font-weight: bold;
+  margin-top: 0;
 }
 
 h1 {
-  color: #212529;
-  font-weight: bold;
   margin-bottom: 1.5rem;
+  color: #1a73e8;
+  font-size: 2rem;
 }
 
 .app-container {
@@ -24,19 +38,60 @@ h1 {
 }
 
 .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
   text-align: center;
-  margin-top: 40px;
 }
 
-.sessions-for-date {
-  margin-top: 30px;
+.loading:before {
+  content: "";
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1a73e8;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  animation: spin 1s linear infinite;
 }
 
-.sessions-for-date h2 {
-  color: #212529;
-  font-weight: bold;
-  margin-bottom: 15px;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+select,
+input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
 }
